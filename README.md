@@ -27,10 +27,6 @@
 
 This is a Python implementation of a novel forgetting-based method for computing vocabulary-restricted modules from ontological knowledge bases. Unlike syntax-based methods that leak irrelevant symbols, NFMR achieves **zero-noise retrieval** with formal semantic guarantees.
 
-<p align="center">
-  <img src="docs/images/architecture.svg" alt="System Architecture" width="800"/>
-</p>
-
 ### 🎯 The Problem
 
 When retrieving knowledge from large-scale KBs for RAG systems:
