@@ -19,7 +19,6 @@
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-architecture">Architecture</a> •
   <a href="#-experiments">Experiments</a> •
-  <a href="#-citation">Citation</a>
 </p>
 
 ---
