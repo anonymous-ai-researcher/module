@@ -11,7 +11,6 @@
 <p align="center">
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Status-Research-yellow.svg" alt="Status: Research"></a>
 </p>
 
 <p align="center">
