@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <linearGradient id="nfmrBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="letheBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <linearGradient id="fameBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444"/>
+      <stop offset="100%" style="stop-color:#DC2626"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="350" fill="#FAFBFC"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold" font-family="Arial">Success Rate Comparison (%)</text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="50" text-anchor="middle" fill="#64748B" font-size="12" font-family="Arial">Oxford-ISG + BioPortal Benchmarks</text>
+  
+  <!-- Y-axis -->
+  <line x1="80" y1="70" x2="80" y2="280" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="40" y="75" fill="#64748B" font-size="10" font-family="Arial">100%</text>
+  <text x="40" y="127" fill="#64748B" font-size="10" font-family="Arial">80%</text>
+  <text x="40" y="179" fill="#64748B" font-size="10" font-family="Arial">60%</text>
+  <text x="40" y="231" fill="#64748B" font-size="10" font-family="Arial">40%</text>
+  <text x="40" y="283" fill="#64748B" font-size="10" font-family="Arial">20%</text>
+  
+  <!-- Grid lines -->
+  <g stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="80" y1="70" x2="550" y2="70"/>
+    <line x1="80" y1="122" x2="550" y2="122"/>
+    <line x1="80" y1="174" x2="550" y2="174"/>
+    <line x1="80" y1="226" x2="550" y2="226"/>
+  </g>
+  
+  <!-- X-axis -->
+  <line x1="80" y1="280" x2="550" y2="280" stroke="#CBD5E1" stroke-width="1"/>
+  
+  <!-- Bars for 10% elimination -->
+  <g>
+    <rect x="100" y="70" width="35" height="210" fill="url(#nfmrBar)" rx="3"/>
+    <rect x="140" y="112" width="35" height="168" fill="url(#letheBar)" rx="3"/>
+    <rect x="180" y="133" width="35" height="147" fill="url(#fameBar)" rx="3"/>
+    <text x="157" y="300" text-anchor="middle" fill="#475569" font-size="11" font-family="Arial">10%</text>
+  </g>
+  
+  <!-- Bars for 30% elimination -->
+  <g>
+    <rect x="250" y="70" width="35" height="210" fill="url(#nfmrBar)" rx="3"/>
+    <rect x="290" y="144" width="35" height="136" fill="url(#letheBar)" rx="3"/>
+    <rect x="330" y="175" width="35" height="105" fill="url(#fameBar)" rx="3"/>
+    <text x="307" y="300" text-anchor="middle" fill="#475569" font-size="11" font-family="Arial">30%</text>
+  </g>
+  
+  <!-- Bars for 50% elimination -->
+  <g>
+    <rect x="400" y="70" width="35" height="210" fill="url(#nfmrBar)" rx="3"/>
+    <rect x="440" y="175" width="35" height="105" fill="url(#letheBar)" rx="3"/>
+    <rect x="480" y="196" width="35" height="84" fill="url(#fameBar)" rx="3"/>
+    <text x="457" y="300" text-anchor="middle" fill="#475569" font-size="11" font-family="Arial">50%</text>
+  </g>
+  
+  <!-- X-axis label -->
+  <text x="300" y="325" text-anchor="middle" fill="#475569" font-size="12" font-family="Arial">Elimination Ratio</text>
+  
+  <!-- Legend -->
+  <g transform="translate(480, 80)">
+    <rect x="0" y="0" width="15" height="15" fill="url(#nfmrBar)" rx="2"/>
+    <text x="22" y="12" fill="#475569" font-size="11" font-family="Arial">NFMR</text>
+    
+    <rect x="0" y="25" width="15" height="15" fill="url(#letheBar)" rx="2"/>
+    <text x="22" y="37" fill="#475569" font-size="11" font-family="Arial">LETHE</text>
+    
+    <rect x="0" y="50" width="15" height="15" fill="url(#fameBar)" rx="2"/>
+    <text x="22" y="62" fill="#475569" font-size="11" font-family="Arial">FAME</text>
+  </g>
+  
+  <!-- Percentage labels on bars -->
+  <g fill="#fff" font-size="10" font-weight="bold" font-family="Arial">
+    <text x="117" y="90" text-anchor="middle">100%</text>
+    <text x="157" y="130" text-anchor="middle">80%</text>
+    <text x="197" y="150" text-anchor="middle">70%</text>
+    
+    <text x="267" y="90" text-anchor="middle">100%</text>
+    <text x="307" y="160" text-anchor="middle">65%</text>
+    <text x="347" y="190" text-anchor="middle">50%</text>
+    
+    <text x="417" y="90" text-anchor="middle">100%</text>
+    <text x="457" y="190" text-anchor="middle">50%</text>
+    <text x="497" y="210" text-anchor="middle">40%</text>
+  </g>
+</svg>

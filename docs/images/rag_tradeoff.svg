@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="chartBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="350" fill="url(#chartBg)" rx="8"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    RAG Accuracy vs Context Size Trade-off
+  </text>
+  
+  <!-- Chart area -->
+  <rect x="70" y="50" width="380" height="240" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#eee" stroke-width="1">
+    <line x1="70" y1="110" x2="450" y2="110"/>
+    <line x1="70" y1="170" x2="450" y2="170"/>
+    <line x1="70" y1="230" x2="450" y2="230"/>
+    <line x1="165" y1="50" x2="165" y2="290"/>
+    <line x1="260" y1="50" x2="260" y2="290"/>
+    <line x1="355" y1="50" x2="355" y2="290"/>
+  </g>
+  
+  <!-- Y-axis labels -->
+  <text x="60" y="55" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#666">100%</text>
+  <text x="60" y="115" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#666">80%</text>
+  <text x="60" y="175" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#666">60%</text>
+  <text x="60" y="235" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#666">40%</text>
+  <text x="60" y="295" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#666">20%</text>
+  
+  <!-- X-axis labels -->
+  <text x="70" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">0</text>
+  <text x="165" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">3K</text>
+  <text x="260" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">6K</text>
+  <text x="355" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">9K</text>
+  <text x="450" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">12K</text>
+  
+  <!-- Axis titles -->
+  <text x="260" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Context Tokens
+  </text>
+  <text x="20" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" transform="rotate(-90, 20, 170)">
+    Accuracy
+  </text>
+  
+  <!-- Data points and lines -->
+  <!-- No Context: (0, 42.6%) -->
+  <circle cx="70" cy="227" r="8" fill="#6c757d"/>
+  <text x="70" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">No Ctx</text>
+  
+  <!-- BM25: (1850, 61.2%) -->
+  <circle cx="129" cy="183" r="8" fill="#ffc107"/>
+  <text x="129" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b38600">BM25</text>
+  
+  <!-- NFMR (Ours): (3120, 84.3%) -->
+  <circle cx="169" cy="98" r="10" fill="#28a745" stroke="#1e7e34" stroke-width="2"/>
+  <text x="169" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e7e34">NFMR</text>
+  
+  <!-- STAR: (12450, 76.8%) -->
+  <circle cx="450" cy="125" r="8" fill="#dc3545"/>
+  <text x="450" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#dc3545">STAR</text>
+  
+  <!-- Connecting trend line (dashed) -->
+  <path d="M70 227 Q200 100 450 125" fill="none" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Optimal region highlight -->
+  <rect x="145" y="75" width="50" height="50" fill="#28a745" fill-opacity="0.1" stroke="#28a745" stroke-width="1" stroke-dasharray="3,3" rx="5"/>
+  <text x="170" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#28a745">Optimal</text>
+  
+  <!-- Legend -->
+  <rect x="320" y="55" width="120" height="80" fill="#fff" stroke="#ddd" rx="4"/>
+  <circle cx="335" cy="72" r="5" fill="#28a745"/>
+  <text x="345" y="76" font-family="Arial, sans-serif" font-size="10" fill="#333">NFMR (Ours)</text>
+  <circle cx="335" cy="92" r="5" fill="#dc3545"/>
+  <text x="345" y="96" font-family="Arial, sans-serif" font-size="10" fill="#333">STAR Module</text>
+  <circle cx="335" cy="112" r="5" fill="#ffc107"/>
+  <text x="345" y="116" font-family="Arial, sans-serif" font-size="10" fill="#333">BM25</text>
+  <circle cx="335" cy="132" r="5" fill="#6c757d"/>
+  <text x="345" y="136" font-family="Arial, sans-serif" font-size="10" fill="#333">No Context</text>
+</svg>

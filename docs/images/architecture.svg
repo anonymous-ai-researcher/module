@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F8FAFC"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#1E293B" font-size="24" font-weight="bold" font-family="Arial, sans-serif">NFMR System Architecture</text>
+  
+  <!-- Input KB Box -->
+  <g filter="url(#dropShadow)">
+    <rect x="30" y="80" width="140" height="100" rx="8" fill="url(#blueGrad)"/>
+    <text x="100" y="120" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Input KB</text>
+    <text x="100" y="140" text-anchor="middle" fill="#E0E7FF" font-size="11" font-family="Arial">(ALCI Ontology)</text>
+    <text x="100" y="158" text-anchor="middle" fill="#E0E7FF" font-size="10" font-family="Arial">sig(O) = Σ ∪ F</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M175 130 L205 130" stroke="#64748B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B"/>
+    </marker>
+  </defs>
+  
+  <!-- Normalization Box -->
+  <g filter="url(#dropShadow)">
+    <rect x="210" y="70" width="150" height="120" rx="8" fill="url(#purpleGrad)"/>
+    <text x="285" y="100" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Linear-Time</text>
+    <text x="285" y="118" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Normalization</text>
+    <text x="285" y="145" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">A-reduced form</text>
+    <text x="285" y="160" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">r-reduced form</text>
+    <text x="285" y="175" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">Definer Management</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M365 130 L395 130" stroke="#64748B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Elimination Box -->
+  <g filter="url(#dropShadow)">
+    <rect x="400" y="70" width="150" height="120" rx="8" fill="url(#orangeGrad)"/>
+    <text x="475" y="100" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Elimination</text>
+    <text x="475" y="118" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Calculus</text>
+    <text x="475" y="145" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">16 Combination Rules</text>
+    <text x="475" y="160" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">Concept Elimination</text>
+    <text x="475" y="175" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">Role Elimination</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M555 130 L585 130" stroke="#64748B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output Module Box -->
+  <g filter="url(#dropShadow)">
+    <rect x="590" y="80" width="170" height="100" rx="8" fill="url(#greenGrad)"/>
+    <text x="675" y="115" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial">Zero-Noise Module</text>
+    <text x="675" y="140" text-anchor="middle" fill="#D1FAE5" font-size="11" font-family="Arial">sig(M) ⊆ Σ</text>
+    <text x="675" y="158" text-anchor="middle" fill="#D1FAE5" font-size="11" font-family="Arial">O ≡_Σ M</text>
+  </g>
+  
+  <!-- Forgetting Vocabulary Box (below main flow) -->
+  <g filter="url(#dropShadow)">
+    <rect x="285" y="220" width="230" height="60" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="400" y="248" text-anchor="middle" fill="#475569" font-size="12" font-weight="bold" font-family="Arial">Forgetting Vocabulary F</text>
+    <text x="400" y="265" text-anchor="middle" fill="#64748B" font-size="10" font-family="Arial">Symbols to eliminate from KB</text>
+  </g>
+  
+  <!-- Arrow from F to Normalization -->
+  <path d="M400 220 L400 195 L285 195 L285 190" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow from F to Elimination -->
+  <path d="M400 220 L400 195 L475 195 L475 190" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- RAG Integration Section -->
+  <rect x="30" y="310" width="740" height="160" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#1E40AF" font-size="16" font-weight="bold" font-family="Arial">RAG Pipeline Integration</text>
+  
+  <!-- Query Box -->
+  <g filter="url(#dropShadow)">
+    <rect x="50" y="360" width="120" height="80" rx="6" fill="#fff" stroke="#3B82F6" stroke-width="2"/>
+    <text x="110" y="395" text-anchor="middle" fill="#1E40AF" font-size="12" font-weight="bold" font-family="Arial">User Query</text>
+    <text x="110" y="415" text-anchor="middle" fill="#64748B" font-size="10" font-family="Arial">"Is A a type of B?"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M175 400 L205 400" stroke="#3B82F6" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6"/>
+    </marker>
+  </defs>
+  
+  <!-- Concept Extraction -->
+  <g filter="url(#dropShadow)">
+    <rect x="210" y="360" width="120" height="80" rx="6" fill="#fff" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="270" y="390" text-anchor="middle" fill="#5B21B6" font-size="11" font-weight="bold" font-family="Arial">Concept</text>
+    <text x="270" y="405" text-anchor="middle" fill="#5B21B6" font-size="11" font-weight="bold" font-family="Arial">Extraction</text>
+    <text x="270" y="425" text-anchor="middle" fill="#64748B" font-size="10" font-family="Arial">Σ = {A, B}</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M335 400 L365 400" stroke="#8B5CF6" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+  <defs>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8B5CF6"/>
+    </marker>
+  </defs>
+  
+  <!-- NFMR Module -->
+  <g filter="url(#dropShadow)">
+    <rect x="370" y="360" width="120" height="80" rx="6" fill="url(#greenGrad)"/>
+    <text x="430" y="390" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold" font-family="Arial">NFMR</text>
+    <text x="430" y="408" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Arial">Zero-Noise</text>
+    <text x="430" y="423" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Arial">Retrieval</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M495 400 L525 400" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arrowhead4)"/>
+  <defs>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- LLM -->
+  <g filter="url(#dropShadow)">
+    <rect x="530" y="360" width="120" height="80" rx="6" fill="#fff" stroke="#F59E0B" stroke-width="2"/>
+    <text x="590" y="395" text-anchor="middle" fill="#B45309" font-size="12" font-weight="bold" font-family="Arial">LLM</text>
+    <text x="590" y="415" text-anchor="middle" fill="#64748B" font-size="10" font-family="Arial">Llama-3-8B</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M655 400 L685 400" stroke="#F59E0B" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  <defs>
+    <marker id="arrowhead5" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+  </defs>
+  
+  <!-- Response -->
+  <g filter="url(#dropShadow)">
+    <rect x="690" y="360" width="65" height="80" rx="6" fill="#fff" stroke="#10B981" stroke-width="2"/>
+    <text x="722" y="400" text-anchor="middle" fill="#047857" font-size="11" font-weight="bold" font-family="Arial">Answer</text>
+    <text x="722" y="418" text-anchor="middle" fill="#64748B" font-size="16" font-family="Arial">✓</text>
+  </g>
+  
+  <!-- Benefits annotations -->
+  <g font-family="Arial" font-size="10">
+    <text x="50" y="490" fill="#059669">✓ 84.3% Accuracy</text>
+    <text x="180" y="490" fill="#059669">✓ 3.2% Hallucination</text>
+    <text x="350" y="490" fill="#059669">✓ 75% Context Reduction</text>
+    <text x="540" y="490" fill="#059669">✓ Zero Symbol Leakage</text>
+  </g>
+</svg>

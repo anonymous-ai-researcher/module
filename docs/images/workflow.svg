@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <defs>
+    <linearGradient id="step1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1"/>
+      <stop offset="100%" style="stop-color:#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="step2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="step3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899"/>
+      <stop offset="100%" style="stop-color:#DB2777"/>
+    </linearGradient>
+    <linearGradient id="step4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <linearGradient id="step5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="400" fill="#FAFBFC"/>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" fill="#1E293B" font-size="20" font-weight="bold" font-family="Arial">Zero-Noise Module Retrieval Workflow</text>
+  
+  <!-- Step 1: Input -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="60" width="120" height="140" rx="10" fill="url(#step1)"/>
+    <circle cx="80" cy="85" r="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Arial">1</text>
+    <text x="80" y="120" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Arial">Input</text>
+    <text x="80" y="140" text-anchor="middle" fill="#E0E7FF" font-size="10" font-family="Arial">Knowledge Base</text>
+    <text x="80" y="155" text-anchor="middle" fill="#E0E7FF" font-size="10" font-family="Arial">O = (T, sig)</text>
+    <text x="80" y="175" text-anchor="middle" fill="#E0E7FF" font-size="10" font-family="Arial">Target Vocab Σ</text>
+  </g>
+  
+  <!-- Arrow 1-2 -->
+  <path d="M145 130 L165 130" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Normalize -->
+  <g filter="url(#shadow)">
+    <rect x="170" y="60" width="120" height="140" rx="10" fill="url(#step2)"/>
+    <circle cx="230" cy="85" r="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="230" y="91" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Arial">2</text>
+    <text x="230" y="120" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Arial">Normalize</text>
+    <text x="230" y="140" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">A-reduced form</text>
+    <text x="230" y="155" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">r-reduced form</text>
+    <text x="230" y="175" text-anchor="middle" fill="#E9D5FF" font-size="10" font-family="Arial">O(n) time</text>
+  </g>
+  
+  <!-- Arrow 2-3 -->
+  <path d="M295 130 L315 130" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Eliminate -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="60" width="120" height="140" rx="10" fill="url(#step3)"/>
+    <circle cx="380" cy="85" r="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="380" y="91" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Arial">3</text>
+    <text x="380" y="120" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Arial">Eliminate</text>
+    <text x="380" y="140" text-anchor="middle" fill="#FCE7F3" font-size="10" font-family="Arial">∀s ∈ F:</text>
+    <text x="380" y="155" text-anchor="middle" fill="#FCE7F3" font-size="10" font-family="Arial">Apply rules</text>
+    <text x="380" y="175" text-anchor="middle" fill="#FCE7F3" font-size="10" font-family="Arial">Remove s</text>
+  </g>
+  
+  <!-- Arrow 3-4 -->
+  <path d="M445 130 L465 130" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: Clean -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="60" width="120" height="140" rx="10" fill="url(#step4)"/>
+    <circle cx="530" cy="85" r="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="530" y="91" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Arial">4</text>
+    <text x="530" y="120" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Arial">Clean</text>
+    <text x="530" y="140" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">Remove definers</text>
+    <text x="530" y="155" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">Cycle detection</text>
+    <text x="530" y="175" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="Arial">Simplification</text>
+  </g>
+  
+  <!-- Arrow 4-5 -->
+  <path d="M595 130 L615 130" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: Output -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="60" width="120" height="140" rx="10" fill="url(#step5)"/>
+    <circle cx="620" cy="85" r="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="620" y="91" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="Arial">5</text>
+    <text x="620" y="120" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Arial">Output</text>
+    <text x="620" y="140" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Arial">Module M</text>
+    <text x="620" y="155" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Arial">sig(M) ⊆ Σ</text>
+    <text x="620" y="175" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Arial">O ≡_Σ M</text>
+  </g>
+  
+  <!-- Properties Section -->
+  <rect x="20" y="230" width="660" height="150" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="350" y="255" text-anchor="middle" fill="#334155" font-size="14" font-weight="bold" font-family="Arial">Key Properties &amp; Guarantees</text>
+  
+  <!-- Property boxes -->
+  <g font-family="Arial">
+    <!-- Soundness -->
+    <rect x="40" y="270" width="145" height="90" rx="6" fill="#fff" stroke="#10B981" stroke-width="2"/>
+    <text x="112" y="295" text-anchor="middle" fill="#047857" font-size="11" font-weight="bold">Soundness</text>
+    <text x="112" y="315" text-anchor="middle" fill="#64748B" font-size="9">O ⊧ α ⟹ M ⊧ α</text>
+    <text x="112" y="330" text-anchor="middle" fill="#64748B" font-size="9">for α over Σ</text>
+    <text x="112" y="350" text-anchor="middle" fill="#10B981" font-size="10">✓ Verified</text>
+    
+    <!-- Completeness -->
+    <rect x="200" y="270" width="145" height="90" rx="6" fill="#fff" stroke="#3B82F6" stroke-width="2"/>
+    <text x="272" y="295" text-anchor="middle" fill="#1D4ED8" font-size="11" font-weight="bold">Completeness</text>
+    <text x="272" y="315" text-anchor="middle" fill="#64748B" font-size="9">M ⊧ α ⟹ O ⊧ α</text>
+    <text x="272" y="330" text-anchor="middle" fill="#64748B" font-size="9">for α over Σ</text>
+    <text x="272" y="350" text-anchor="middle" fill="#3B82F6" font-size="10">✓ Verified</text>
+    
+    <!-- Zero Noise -->
+    <rect x="360" y="270" width="145" height="90" rx="6" fill="#fff" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="432" y="295" text-anchor="middle" fill="#6D28D9" font-size="11" font-weight="bold">Zero Noise</text>
+    <text x="432" y="315" text-anchor="middle" fill="#64748B" font-size="9">sig(M) ⊆ Σ</text>
+    <text x="432" y="330" text-anchor="middle" fill="#64748B" font-size="9">No symbol leakage</text>
+    <text x="432" y="350" text-anchor="middle" fill="#8B5CF6" font-size="10">✓ Guaranteed</text>
+    
+    <!-- Efficiency -->
+    <rect x="520" y="270" width="145" height="90" rx="6" fill="#fff" stroke="#F59E0B" stroke-width="2"/>
+    <text x="592" y="295" text-anchor="middle" fill="#B45309" font-size="11" font-weight="bold">Efficiency</text>
+    <text x="592" y="315" text-anchor="middle" fill="#64748B" font-size="9">Linear normalization</text>
+    <text x="592" y="330" text-anchor="middle" fill="#64748B" font-size="9">50× faster</text>
+    <text x="592" y="350" text-anchor="middle" fill="#F59E0B" font-size="10">✓ Empirical</text>
+  </g>
+</svg>
