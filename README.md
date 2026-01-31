@@ -2,7 +2,7 @@
   <img src="docs/images/logo.svg" alt="NFMR Logo" width="120"/>
 </p>
 
-<h1 align="center">🔬 NFMR: Noise-Free Module Retrieval</h1>
+<h1 align="center">🔬 Noise-Free Module Retrieval</h1>
 
 <p align="center">
   <strong>No More, No Less: Noise-Free Module Retrieval from Large-Scale Knowledge Bases</strong>
@@ -11,8 +11,6 @@
 <p align="center">
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
-  <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
-  <a href="#"><img src="https://img.shields.io/badge/SIGIR-2026-red.svg" alt="SIGIR 2026"></a>
   <a href="#"><img src="https://img.shields.io/badge/Status-Research-yellow.svg" alt="Status: Research"></a>
 </p>
 
@@ -29,7 +27,7 @@
 
 ## 📋 Overview
 
-**NFMR** is a Python implementation of a novel forgetting-based method for computing vocabulary-restricted modules from ontological knowledge bases. Unlike syntax-based methods that leak irrelevant symbols, NFMR achieves **zero-noise retrieval** with formal semantic guarantees.
+This is a Python implementation of a novel forgetting-based method for computing vocabulary-restricted modules from ontological knowledge bases. Unlike syntax-based methods that leak irrelevant symbols, NFMR achieves **zero-noise retrieval** with formal semantic guarantees.
 
 <p align="center">
   <img src="docs/images/architecture.svg" alt="System Architecture" width="800"/>
@@ -385,21 +383,6 @@ class NoiseFreeForgetting:
         forgetting_vocab: Set[str]
     ) -> OntologyKB:
         """Forget symbols from the KB."""
-```
-
----
-
-## 📚 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{nfmr2026,
-  title={No More, No Less: Noise-Free Module Retrieval from Large-Scale Knowledge Bases},
-  author={Zhao, Yizheng},
-  booktitle={Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-  year={2026}
-}
 ```
 
 ---
