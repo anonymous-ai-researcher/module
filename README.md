@@ -215,9 +215,6 @@ Zero-noise modules are **more compact** than syntax-based alternatives:
 | STAR Module | 76.8% | 11.5% | 12,450 |
 | **NFMR (Ours)** | **84.3%** | **3.2%** | **3,120** |
 
-<p align="center">
-  <img src="docs/images/rag_tradeoff.svg" alt="RAG Accuracy vs Context Size" width="500"/>
-</p>
 
 ---
 
