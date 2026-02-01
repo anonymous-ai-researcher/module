@@ -53,7 +53,7 @@ NFMR introduces a **linear-time normalization strategy** that:
 
 | Feature | Description |
 |---------|-------------|
-| 🎯 **Zero-Noise Retrieval** | Retrieved modules contain exactly the target vocabulary—no symbol leakage |
+| 🎯 **Zero-Noise Retrieval** | Retrieved modules contain exactly the target vocabulary-no symbol leakage |
 | ⚡ **Linear-Time Normalization** | Novel strategy avoiding exponential definer proliferation |
 | 🔬 **ALCI Support** | Handles expressive Description Logic with inverse roles |
 | 🤖 **RAG Integration** | Built-in pipeline for retrieval-augmented generation |
