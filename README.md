@@ -90,10 +90,6 @@ NFMR introduces a **linear-time normalization strategy** that:
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-<p align="center">
-  <img src="docs/images/workflow.svg" alt="Retrieval Workflow" width="700"/>
-</p>
-
 ---
 
 ## 📦 Installation
