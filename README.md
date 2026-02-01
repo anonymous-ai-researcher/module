@@ -1,3 +1,9 @@
+> **📢 Note to Reviewers (Submission ID: 481)**
+> 
+> The complete version of this paper including the **full Appendix** with all proofs and extended experimental results is available in this repository as **`Submission_ID481_with_Appendix.pdf`**. Please refer to this file for comprehensive technical details.
+
+---
+
 <p align="center">
   <img src="docs/images/logo.svg" alt="NFMR Logo" width="120"/>
 </p>
